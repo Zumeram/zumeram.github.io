@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+*{
+    margin: 0;
+}
+body {
+    background-color:#08E3D8;
+    color: black;
+    height: 100vh;
+    box-sizing: border-box;
+}  
+    
+h1 {
+   /* 1. Centrado Horizontal */
+  text-align: center; 
+  
+  /* 2. Aplicar la Fuente */
+ font-family: "Merriweather", serif;
+  
+  /* 3. Tamaño (90px) */
+  font-size: 100px; 
+}
+
+.alineador {
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea los hijos verticalmente (Eje Transversal) */
+  justify-content: center; /* Alinea los hijos horizontalmente (Eje Principal) */
+  min-height: 100vh; /* Ocupa al menos la altura visible de la ventana para centrar */
+  width: 80%; /* Opcional: limita el ancho de todo el bloque para que no toque los bordes */
+  margin: 0 auto; /* Centra el bloque .alineador en la página */
+}
+
+/* 2. Estilos de la Imagen */
+.imagen-izquierda {
+  width: 550px; /* Tamaño de la imagen */
+  height: auto;
+  flex-shrink: 0; /* Asegura que la imagen no se encoja */
+}
+
+/* 3. Estilos del Texto: Creación de la Separación y Alineación del Párrafo */
+.texto-derecha {
+  /* Crea el espacio o "margen" entre la imagen y el texto */
+  margin-left: 30px; 
+  
+  /* Permite que el texto ocupe el espacio restante */
+  flex-grow: 7; 
+  
+  /* Alinea el contenido (el párrafo) dentro de este div a la derecha */
+  text-align: right; 
+  font-family: "Krona One", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 33px;
+  text-size-adjust: auto;
+}
+/* Estilos del Pie de Página (Footer) */
+.main-footer {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0; /* Espaciado interno arriba y abajo */
+  text-align: center; /* Centra el texto y los botones */
+}
+
+/* Contenido para mantener la separación y centrado */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para el contenedor de los botones */
+.footer-buttons {
+  margin-top: 15px; /* Espacio entre el texto de derechos de autor y los botones */
+  color: #fff;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* Estilo para los botones (los enlaces 'a') */
+.footer-btn {
+  /* Apariencia de botón */
+  display: inline-block; /* Permite aplicar padding y margin */
+  background-color: hsl(266, 94%, 43%); 
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 0 10px; /* Margen para separarlos entre sí */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+  font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+.footer-btn:hover {
+  background-color: hsl(180, 8%, 97%); /* Color azul brillante al pasar el mouse */
+}
